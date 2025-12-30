@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "peak.chao.androidmedia.app"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "peak.chao.androidmedia.app"
@@ -41,6 +41,8 @@ android {
 
 dependencies {
 
+    implementation(project(":media"))
+    
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -49,6 +51,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.compose.material.icons)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
